@@ -1,0 +1,51 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/gray"
+    tools:context="com.example.scorer.fragments.StartFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:backgroundTint="@android:color/holo_blue_dark"
+            android:text="شروع بازی جدید"
+            android:textSize="24sp"
+            app:cornerRadius="20dp"
+            android:id="@+id/btn_start"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:backgroundTint="@android:color/black"
+            android:text="ادامه بازی"
+            android:textSize="24sp"
+            app:cornerRadius="20dp"
+            android:id="@+id/btn_continue"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+
+    </LinearLayout>
+
+</FrameLayout>

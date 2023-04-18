@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:backgroundTint="@android:color/transparent"
+    android:layout_height="wrap_content">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:strokeWidth="2dp"
+        app:cardCornerRadius="5dp"
+        android:backgroundTint="@color/gray"
+        app:strokeColor="@color/black"
+        android:layout_margin="18dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:padding="10dp"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layoutDirection="rtl">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/game_name"
+                    android:text="بازی ۱"
+                    android:textStyle="bold"
+                    android:layout_marginRight="18dp"
+                    android:layout_marginTop="12dp"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/game_progress"
+                    android:text="درصد پیشرفت"
+                    android:layout_marginRight="18dp"
+                    android:layout_marginTop="12dp"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/game_score"
+                    android:text="امتیاز"
+                    android:layout_marginRight="18dp"
+                    android:layout_marginTop="12dp"
+                    android:textColor="@color/black"
+                    android:layout_marginBottom="12dp"
+                    android:textSize="16sp"/>
+
+            </LinearLayout>
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_delete_24"
+                android:id="@+id/btn_delete"
+                android:clickable="true"
+                android:layout_alignParentLeft="true"/>
+
+
+        </RelativeLayout>
+
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+
+</RelativeLayout>
