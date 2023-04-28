@@ -21,7 +21,11 @@
         android:id="@+id/settingFragment"
         android:name="com.example.scorer.fragments.SettingFragment"
         android:label="fragment_setting"
-        tools:layout="@layout/fragment_setting" />
+        tools:layout="@layout/fragment_setting" >
+        <action
+            android:id="@+id/action_settingFragment_to_chaptersFragment"
+            app:destination="@id/chaptersFragment" />
+    </fragment>
     <fragment
         android:id="@+id/mainFragment"
         android:name="com.example.scorer.fragments.MainFragment"

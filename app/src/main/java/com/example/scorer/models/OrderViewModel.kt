@@ -12,14 +12,30 @@ private const val level = 19
 private const val chapters = 20
 
 class OrderViewModel:ViewModel() {
-    private val _quantity = MutableLiveData<Int>()
-    val quantity : LiveData<Int> = _quantity
+    private val _b = MutableLiveData<Int>()
+    val bVar : LiveData<Int> = _b
 
-    private val _flavor = MutableLiveData<String>()
-    val flavor : LiveData<String> = _flavor
+    private val _r = MutableLiveData<Int>()
+    val rVar : LiveData<Int> = _r
 
-    private val _date = MutableLiveData<String>()
-    val date: LiveData<String> = _date
+    private val _s = MutableLiveData<Int>()
+    val sVar : LiveData<Int> = _s
+
+    private val _t = MutableLiveData<Int>()
+    val tVal : LiveData<Int> = _t
+
+    private val _z = MutableLiveData<Int>()
+    val zVal : LiveData<Int> = _z
+
+    private val _e = MutableLiveData<Int>()
+    val eVal : LiveData<Int> = _e
+
+    private val _back = MutableLiveData<Int>()
+    val backVal : LiveData<Int> = _back
+
+    private val _totalPoint = MutableLiveData<String>()
+    val totalPoint : LiveData<String> = _totalPoint
+
 
     private val _price = MutableLiveData<Double>()
     val price: LiveData<String> = Transformations.map(_price) {
@@ -32,11 +48,11 @@ class OrderViewModel:ViewModel() {
         resetOrder()
     }
 
-    fun setQuantity(numberCupCake : Int){
+    /*fun setQuantity(numberCupCake : Int){
         _quantity.value = numberCupCake
         //updatePrice()
-    }
-    fun setFlavor(desireFlavor: String){
+    }*/
+    /*fun setFlavor(desireFlavor: String){
         _flavor.value = desireFlavor
     }
 
@@ -47,7 +63,7 @@ class OrderViewModel:ViewModel() {
 
     fun hasNoFlavorSet(): Boolean {
         return _flavor.value.isNullOrEmpty()
-    }
+    }*/
 
     private fun getPickupOptions():List<String>{
         val options = mutableListOf<String>()
@@ -69,10 +85,10 @@ class OrderViewModel:ViewModel() {
         _price.value = calculatedPrice
     }
 */
-    fun resetOrder() {
+    fun resetOrder() {/*
         _quantity.value = 0
         _flavor.value = ""
         _date.value = dateOptions[0]
-        _price.value = 0.0
+        _price.value = 0.0*/
     }
 }

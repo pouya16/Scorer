@@ -9,6 +9,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:strokeWidth="2dp"
+        android:id="@+id/main_card"
+        android:clickable="true"
         app:cardCornerRadius="5dp"
         android:backgroundTint="@color/gray"
         app:strokeColor="@color/black"
@@ -36,16 +38,6 @@
                     android:textColor="@color/black"
                     android:textSize="18sp"/>
 
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/game_progress"
-                    android:text="درصد پیشرفت"
-                    android:layout_marginRight="18dp"
-                    android:layout_marginTop="12dp"
-                    android:textColor="@color/black"
-                    android:textSize="16sp"/>
 
 
                 <TextView

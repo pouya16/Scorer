@@ -6,12 +6,14 @@ import androidx.room.PrimaryKey
 
 @Entity
 data class Game(
-    @PrimaryKey val id:Int,
-    @NonNull val name:String,
-    @NonNull val score: Int,
-    @NonNull val b_var:Int,
-    @NonNull val r_var:Int,
-    @NonNull val s_var:Int,
-    @NonNull val t_var:Int,
-    @NonNull val back_var:Int
+    @PrimaryKey(autoGenerate = true)
+    val id : Int = 0,
+    @NonNull var name:String,
+    @NonNull var score: Int,
+    @NonNull var b_var:Int,
+    @NonNull var r_var:Int,
+    @NonNull var s_var:Int,
+    @NonNull var t_var:Int,
+    @NonNull var z_var:Int,
+    @NonNull var back_var:Int
 )

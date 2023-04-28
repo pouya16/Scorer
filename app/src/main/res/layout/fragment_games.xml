@@ -79,6 +79,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="100"
+                    android:id="@+id/txt_e"
                     android:textColor="@color/white"
                     android:layout_marginRight="8dp"/>
             </LinearLayout>
@@ -94,6 +95,19 @@
             app:layout_constraintLeft_toLeftOf="parent"
             android:layout_marginTop="18dp"
             android:id="@+id/txt_level"
+            android:textColor="@color/white"
+            android:textSize="20sp"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/card_e"
+            android:text="امتیاز کل : ۳۰۰"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginTop="48dp"
+            android:id="@+id/txt_score"
             android:textColor="@color/white"
             android:textSize="20sp"/>
 
@@ -118,6 +132,7 @@
             app:layout_constraintRight_toRightOf="parent"
             android:layout_margin="80dp"
             app:cornerRadius="100dp"
+            android:id="@+id/btn_yes"
             android:text="بلی"
             android:textSize="16sp"
             android:textStyle="bold"
@@ -131,6 +146,7 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
             android:layout_margin="80dp"
+            android:id="@+id/btn_no"
             app:cornerRadius="100dp"
             android:text="خیر"
             android:textSize="16sp"

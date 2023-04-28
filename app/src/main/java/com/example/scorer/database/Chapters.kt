@@ -7,9 +7,10 @@ import java.util.function.IntToLongFunction
 
 @Entity
 data class Chapters(
-    @PrimaryKey val id:Int,
+    @PrimaryKey(autoGenerate = true)
+    val id:Int = 0,
     @NonNull val game_id:Int,
     @NonNull val chap_number:Int,
-    @NonNull val e_variable:Int,
-    @NonNull val current_level:Int
+    @NonNull var e_variable:Int,
+    @NonNull var current_level:Int
 )

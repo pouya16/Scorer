@@ -67,6 +67,7 @@
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_margin="12dp"
+            android:id="@+id/textInputLayoutName"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
             android:hint="بازی"
             android:layout_height="wrap_content">
@@ -94,6 +95,7 @@
             android:layout_width="match_parent"
             android:layout_marginRight="12dp"
             android:layout_marginLeft="12dp"
+            android:id="@+id/textInputLayoutBVar"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
             android:hint="متفیر B"
             android:layout_height="wrap_content">
@@ -110,6 +112,7 @@
             android:layout_width="match_parent"
             android:layout_marginRight="12dp"
             android:layout_marginLeft="12dp"
+            android:id="@+id/textInputLayoutRVar"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
             android:hint="متفیر R"
             android:layout_height="wrap_content">
@@ -125,6 +128,7 @@
             android:layout_width="match_parent"
             android:layout_marginRight="12dp"
             android:layout_marginLeft="12dp"
+            android:id="@+id/textInputLayoutSVar"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
             android:hint="متفیر S"
             android:layout_height="wrap_content">
@@ -141,6 +145,7 @@
             android:layout_width="match_parent"
             android:layout_marginRight="12dp"
             android:layout_marginLeft="12dp"
+            android:id="@+id/textInputLayoutTVar"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
             android:hint="متفیر T"
             android:layout_height="wrap_content">
@@ -157,6 +162,7 @@
             android:layout_width="match_parent"
             android:layout_marginRight="12dp"
             android:layout_marginLeft="12dp"
+            android:id="@+id/textInputLayoutZVar"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
             android:hint="متفیر Z"
             android:layout_height="wrap_content">
@@ -173,6 +179,7 @@
             android:layout_width="match_parent"
             android:layout_marginRight="12dp"
             android:layout_marginLeft="12dp"
+            android:id="@+id/textInputLayoutBackVar"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
             android:hint="متفیر Back"
             android:layout_height="wrap_content">

@@ -8,7 +8,9 @@
     <com.google.android.material.card.MaterialCardView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:id="@+id/main_card"
         android:backgroundTint="@android:color/holo_blue_dark"
+        android:clickable="true"
         app:cardCornerRadius="20dp">
 
         <LinearLayout
@@ -36,6 +38,7 @@
                 android:layout_height="0dp"
                 android:layout_weight="2"
                 android:text="0 %"
+                android:id="@+id/txt_progress"
                 android:textColor="@color/white"
                 android:gravity="center"/>
 

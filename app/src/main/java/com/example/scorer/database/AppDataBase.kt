@@ -24,7 +24,7 @@ abstract class AppDataBase:RoomDatabase() {
                     context.applicationContext,
                     AppDataBase::class.java,
                     "item_database"
-                )
+                ).allowMainThreadQueries()
                     // Wipes and rebuilds instead of migrating if no Migration object.
                     // Migration is not part of this codelab.
                     .fallbackToDestructiveMigration()
